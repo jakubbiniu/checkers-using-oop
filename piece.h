@@ -17,7 +17,7 @@ class piece{
     bool alive_check();
     bool king_check();
     virtual void move(int a, int b)=0;
-    virtual ~piece();
+    // virtual ~piece();
     void die();
     void make_alive();
     void make_king();
