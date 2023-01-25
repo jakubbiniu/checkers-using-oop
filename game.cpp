@@ -28,20 +28,28 @@ void game::show_board(){
                 cout<<" . |";
             }
             else if (board[i][j]==1){
-                cout<<" b |";
+                cout<<" w |";
             }
             else if (board[i][j]==2){
-                cout<<" c |";
+                cout<<" b |";
             }
             else if (board[i][j]==3){
-                cout<<" B |";
+                cout<<" W |";
             }
             else if (board[i][j]==4){
-                cout<<" C |";
+                cout<<" B |";
             }
         }
         cout<<endl;
     }
     cout<<"  ---------------------------------"<<endl;
     cout<<"    1   2   3   4   5   6   7   8"<<endl;
+}
+
+int game::get_black_count(){
+    return black_count;
+}
+
+int game::get_white_count(){
+    return white_count;
 }

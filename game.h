@@ -15,6 +15,8 @@ class game{
     void show_board();
     void decrease_number_white();
     void decrease_number_black();
+    int get_white_count();
+    int get_black_count();
 
 
 };
