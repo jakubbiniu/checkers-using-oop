@@ -1,4 +1,7 @@
 #include "piece.h"
+#include <string>
+
+using namespace std;
 
 void piece::die(){
     is_alive = false;
@@ -43,4 +46,8 @@ bool piece::alive_check(){
 
 bool piece::king_check(){
     return is_king;
+}
+
+bool piece::color_check(){
+    return is_white;
 }

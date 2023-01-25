@@ -8,8 +8,12 @@ game::game(){
     black_count=12;
 }
 
-void game::decrease_number(int a){
-    a--;
+void game::decrease_number_white(){
+    white_count--;
+}
+
+void game::decrease_number_black(){
+    black_count--;
 }
 
 void game::show_board(){

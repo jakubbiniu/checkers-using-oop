@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -8,6 +9,7 @@ class piece{
     bool is_king;
     int x;
     int y;
+    bool is_white;
     public:
     // piece(int a, int b);
     void set_x(int a);
@@ -16,6 +18,7 @@ class piece{
     int get_y();
     bool alive_check();
     bool king_check();
+    bool color_check();
     virtual void move(int a, int b)=0;
     // virtual ~piece();
     void die();
